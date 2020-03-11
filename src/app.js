@@ -36,7 +36,7 @@ app.get('',(req, res) => {      //this is for index page (root), dynamic temp
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About page',
-        description: 'This is a page about me',
+        //description: 'This is a page about me',
         name: 'Jas R.'
     })
 })

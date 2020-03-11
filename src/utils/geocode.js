@@ -6,7 +6,7 @@ const geocode = (address, callback) => {
         if (error) {
             callback('Unable to connect to the server!', undefined)
         }
-        else if (body.features.length == 0) {
+        else if (address===';' || body.features.length == 0) {
             callback({error:'No matching results found!'}, undefined)
         }
         else {
