@@ -10,7 +10,7 @@ const forecast = (longitude, latitude, callback) => {
             callback('Unable to locate the coordinates', undefined)
         }
         else {
-            callback(undefined, body.daily.data[0].summary + '{} It is currently ' + body.currently.temperature + 'C degrees outside.' + 
+            callback(undefined, body.daily.data[0].summary + ' It is currently ' + body.currently.temperature + 'C degrees outside.' + 
                         ' There is a ' + body.currently.precipProbability + '% of rain.\n' +'\n Temperature High:: ' + body.daily.data[0].temperatureHigh
                         + ' Temperature Low: ' + body.daily.data[0].temperatureLow)
             
